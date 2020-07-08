@@ -39,7 +39,7 @@ sudo service influxdb start
 확인: show databases
 ```
 # Grafana Installation
-```
+
 ## 1. Repository의 GPG key를 더하기
 ```
 curl https://bintray.com/user/downloadSubjectPublicKey?username=bintray | sudo apt-key add -
