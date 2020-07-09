@@ -61,4 +61,7 @@ sudo service grafana-server start
 ```
 sudo pip install influxdb
 ```
-## gpio pin map
+### Git Hub 사용방법
+  -Repository down load
+```
+git clone https://github.com/<username>/<repository name>
