@@ -65,3 +65,13 @@ sudo pip install influxdb
   -Repository down load
 ```
 git clone https://github.com/<username>/<repository name>
+```
+## Vim 설정
+```
+set nu = 글자 앞에 번호 출력
+set cindent = C언어 사용할때
+set ts=<숫자> = Tap키를 누르면 숫자만큼 띄어쓰기
+if has("syntax")
+    syntax on
+endif = syntax를 가진 파일이면 syntax 기능을 사용(컬러를 준다)
+```
