@@ -66,7 +66,7 @@ sudo pip install influxdb
 ```
 git clone https://github.com/<username>/<repository name>
 ```
-## Vim 설정
+### Vim 설정
 ```
 set nu = 글자 앞에 번호 출력
 set cindent = C언어 사용할때
