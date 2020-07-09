@@ -71,7 +71,34 @@ git clone https://github.com/<username>/<repository name>
 set nu = 글자 앞에 번호 출력
 set cindent = C언어 사용할때
 set ts=<숫자> = Tap키를 누르면 숫자만큼 띄어쓰기
+set softtabstop=<숫자>
+set bg=dark
+set expandtab
+let python_version_2 = 1
+let python_highlight_all = 1
+filetype indent plugin on
 if has("syntax")
     syntax on
 endif = syntax를 가진 파일이면 syntax 기능을 사용(컬러를 준다)
 ```
+### 적외선 인체감지 센서
+```
+#!/usr/bin/python
+
+import time
+import RPi.GPIO as GPIO
+
+print GPIO.VERSION
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(4, GPIO.IN)
+
+def interrupt_fired(channel):
+    print("interrupt Fired")
+    print(channel)
+
+GPIO.add_event_detect(4, GPIO.FALLING, callback=interrupt_fired)
+
+while(True):
+    time.sleep(1)
+    print("timer fired")
+ ```
