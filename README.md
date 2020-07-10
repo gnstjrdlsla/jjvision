@@ -102,3 +102,12 @@ while(True):
     time.sleep(1)
     print("timer fired")
  ```
+## 명령어
+```
+복사할때: cp <복사할파일> <복사될위치>/<파일이름> 
+지울떄: rm <파일이름>
+```
+```
+블루투스 끌때: sudo vim /boot/config.txt 들어가서 마지막줄에 dtoverlay=pi3-disable-bt
+              sudo systemctl diable hciuart 작성후 sudo reboot 재접속
+```
